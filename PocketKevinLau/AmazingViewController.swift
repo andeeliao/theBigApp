@@ -7,15 +7,46 @@
 //
 
 import UIKit
+import AVFoundation
 
 class AmazingViewController: UIViewController {
+    
+    var audioPlayer: AVAudioPlayer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        addButton()
+        setupAudioPlayer()
+    }
+    
+    private func addButton() {
         let heartGif = UIImage.gifImageWithName("heartpoosh")
-        let imageView = UIImageView(image: heartGif)
-        imageView.frame = CGRect(x: 20.0, y: 50.0, width: 100, height: 100)
-        view.addSubview(imageView)
+        
+        let button = UIButton()
+        button.frame = CGRect(x: 0, y: 0, width: 150, height: 150)
+        button.layer.cornerRadius = button.frame.height / 2
+        button.backgroundColor = .white
+        button.setImage(heartGif, for: .normal)
+        view.addSubview(button)
+        button.center = view.center
+        
+        button.addTarget(self, action: #selector(playHeart(_:)), for: .touchUpInside)
+    }
+    
+    private func setupAudioPlayer() {
+        do {
+            if let fileURL = Bundle.main.path(forResource: "heartheartheart", ofType: "wav") {
+                audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: fileURL))
+            } else {
+                print("No file with specified name exists")
+            }
+        } catch let error {
+            print("Can't play the audio file failed with an error \(error.localizedDescription)")
+        }
+    }
+    
+    @objc private func playHeart(_ sender:UIButton!) {
+        audioPlayer?.play()
     }
 }
