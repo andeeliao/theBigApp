@@ -7,29 +7,15 @@
 //
 
 import UIKit
-import WebKit
 
 class AmazingViewController: UIViewController {
-    var webView: WKWebView!
-    
-    override func loadView() {
-        let webConfiguration = WKWebViewConfiguration()
-        webView = WKWebView(frame: .zero, configuration: webConfiguration)
-        webView.uiDelegate = self
-        view = webView
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        guard let theBigURL = URL(string: "http://xeniatay.com/thebigone/") else { return }
-        let bigRequest = URLRequest(url: theBigURL)
-        webView.load(bigRequest)
+        let heartGif = UIImage.gifImageWithName("heartpoosh")
+        let imageView = UIImageView(image: heartGif)
+        imageView.frame = CGRect(x: 20.0, y: 50.0, width: 100, height: 100)
+        view.addSubview(imageView)
     }
-
-
-}
-
-extension AmazingViewController: WKUIDelegate {
-    
 }

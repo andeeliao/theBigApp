@@ -14,7 +14,9 @@
 		17C5D7AD2294CD6A00B57F0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17C5D7AB2294CD6A00B57F0D /* LaunchScreen.storyboard */; };
 		17C5D7B82294CD6A00B57F0D /* PocketKevinLauTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C5D7B72294CD6A00B57F0D /* PocketKevinLauTests.swift */; };
 		17C5D7C32294CD6A00B57F0D /* PocketKevinLauUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C5D7C22294CD6A00B57F0D /* PocketKevinLauUITests.swift */; };
-		17C5D7D12294D2AA00B57F0D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17C5D7D02294D2AA00B57F0D /* Default-568h@2x.png */; };
+		17C5D7D52294DEF400B57F0D /* heartheartheart.wav in Resources */ = {isa = PBXBuildFile; fileRef = 17C5D7D42294DEF400B57F0D /* heartheartheart.wav */; };
+		17C5D7D72294E0E500B57F0D /* iOSDevCenters+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C5D7D62294E0E500B57F0D /* iOSDevCenters+GIF.swift */; };
+		17C5D7D92294E12000B57F0D /* heartpoosh.gif in Resources */ = {isa = PBXBuildFile; fileRef = 17C5D7D82294E11F00B57F0D /* heartpoosh.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +50,9 @@
 		17C5D7BE2294CD6A00B57F0D /* PocketKevinLauUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocketKevinLauUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17C5D7C22294CD6A00B57F0D /* PocketKevinLauUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketKevinLauUITests.swift; sourceTree = "<group>"; };
 		17C5D7C42294CD6A00B57F0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		17C5D7D02294D2AA00B57F0D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		17C5D7D42294DEF400B57F0D /* heartheartheart.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = heartheartheart.wav; sourceTree = "<group>"; };
+		17C5D7D62294E0E500B57F0D /* iOSDevCenters+GIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iOSDevCenters+GIF.swift"; sourceTree = "<group>"; };
+		17C5D7D82294E11F00B57F0D /* heartpoosh.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = heartpoosh.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +83,6 @@
 		17C5D7962294CD6800B57F0D = {
 			isa = PBXGroup;
 			children = (
-				17C5D7D02294D2AA00B57F0D /* Default-568h@2x.png */,
 				17C5D7A12294CD6800B57F0D /* PocketKevinLau */,
 				17C5D7B62294CD6A00B57F0D /* PocketKevinLauTests */,
 				17C5D7C12294CD6A00B57F0D /* PocketKevinLauUITests */,
@@ -100,10 +103,13 @@
 		17C5D7A12294CD6800B57F0D /* PocketKevinLau */ = {
 			isa = PBXGroup;
 			children = (
+				17C5D7D32294DEDC00B57F0D /* clips */,
 				17C5D7A22294CD6800B57F0D /* AppDelegate.swift */,
 				17C5D7A42294CD6800B57F0D /* AmazingViewController.swift */,
+				17C5D7D62294E0E500B57F0D /* iOSDevCenters+GIF.swift */,
 				17C5D7A62294CD6800B57F0D /* Main.storyboard */,
 				17C5D7A92294CD6A00B57F0D /* Assets.xcassets */,
+				17C5D7D82294E11F00B57F0D /* heartpoosh.gif */,
 				17C5D7AB2294CD6A00B57F0D /* LaunchScreen.storyboard */,
 				17C5D7AE2294CD6A00B57F0D /* Info.plist */,
 			);
@@ -126,6 +132,14 @@
 				17C5D7C42294CD6A00B57F0D /* Info.plist */,
 			);
 			path = PocketKevinLauUITests;
+			sourceTree = "<group>";
+		};
+		17C5D7D32294DEDC00B57F0D /* clips */ = {
+			isa = PBXGroup;
+			children = (
+				17C5D7D42294DEF400B57F0D /* heartheartheart.wav */,
+			);
+			path = clips;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,10 +246,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17C5D7D92294E12000B57F0D /* heartpoosh.gif in Resources */,
 				17C5D7AD2294CD6A00B57F0D /* LaunchScreen.storyboard in Resources */,
-				17C5D7D12294D2AA00B57F0D /* Default-568h@2x.png in Resources */,
 				17C5D7AA2294CD6A00B57F0D /* Assets.xcassets in Resources */,
 				17C5D7A82294CD6800B57F0D /* Main.storyboard in Resources */,
+				17C5D7D52294DEF400B57F0D /* heartheartheart.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17C5D7A52294CD6800B57F0D /* AmazingViewController.swift in Sources */,
+				17C5D7D72294E0E500B57F0D /* iOSDevCenters+GIF.swift in Sources */,
 				17C5D7A32294CD6800B57F0D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
